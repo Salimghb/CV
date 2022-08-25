@@ -1,0 +1,207 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\usepackage[utf8]{inputenc}
+\moderncvstyle{banking} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{makecell}
+\usepackage{tabularx}
+
+\newcolumntype{b}{X}
+\newcolumntype{s}{>{\hsize=.4\hsize}X}
+\newcommand{\heading}[1]{\multicolumn{1}{c}{#1}}
+
+\usepackage[scale=0.85]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Salim} % Your first name
+\familyname{Ghbabra} % Your last name
+
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Ingénieur d’Études et Développement Informatique}
+\address{2 rue Charles Péguy}{Bègles, 33130}
+\phone{06.49.28.71.18}
+\email{ghbabrasalim@gmail.com}
+\linkedin{\href{https://www.linkedin.com/in/salim-ghbabra/}{ salim-ghbabra}}
+\extrainfo{Né le 13/11/1997 -- 24 ans}
+\exinfo{Véhiculé -- Permis B}
+
+%----------------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{Formation}
+
+\vspace{1ex}
+\cventry{2017--2019}{Université d'Orléans, France}{Master 2 -- MIAGE}{Métiers du Social et de l'Assurance}{}{}
+
+\vspace{1ex}
+\cventry{2017--2018}{Babeș-Bolyai University, Cluj-Napoca, Roumanie}{Master's degree - Software Engineering}{Erasmus}{}{}
+
+\vspace{1ex}
+\cventry{2014--2017}{Université d'Orléans, France}{Licence de Mathématiques et d'Informatique}{}{}{}
+
+\vspace{1ex}
+\cventry{2014}{Lycée Voltaire, Orléans, France}{Baccalauréat Scientifique}{}{}{}
+
+
+\section{Langues}
+
+\cvitemwithcomment{Français}{Langue natale}{Compréhension - Expression}
+\cvitemwithcomment{Anglais}{Professionnel}{Compréhension - Expression}
+\cvitemwithcomment{Espagnol}{Scolaire}{Compréhension}
+
+
+\section{Expériences professionnelles}
+\cventry{Tours, France}{RGCU -- Répertoire de Gestion des Carrières Unique}{Caisse Nationale d'Assurance Vieillesse}{De Janvier 2020 à ce jour}{}{{\textbf{Taille du projet}} : Plateau de 30 à 40 personnes}
+
+\vspace{1ex}
+
+{\begin{itemize}
+\item Développement des fonctionnalités métier : Back-End -- \textbf{Java 8} / \textbf{Eclipse}
+\item Développement d'IHM : Front-End -- \textbf{Angular 11} / \textbf{VSCode}
+\item Développement de l'extracteur de données destinées aux tableaux de bord –- \textbf{Spring Batch} / \textbf{SQL}
+\item Amélioration continue et optimisation des traitements précédemment développés
+\item Livraison des projets via \textbf{Maven} / \textbf{Jenkins}
+\item Correction des anomalies détectées par les cellules de qualification technique et d’intégration -- \textbf{Mantis}
+\item Configuration, déploiement et exploitation des EAR
+\item Configuration des serveurs -- \textbf{JBoss AS 7.1.0} / \textbf{FileZilla}
+\item Exploitation de files JMS -- \textbf{ActiveMQ}
+\item Tests unitaires par requêtes SQL -- \textbf{DBeaver} (\textbf{PostgreSQL}, \textbf{Oracle}, …)
+\item Tests unitaires -- \textbf{JUnit} / \textbf{Mockito} / \textbf{PowerMockito}
+\item Création de suites de tests -- \textbf{SoapUI}
+\item Gestion de versions -- \textbf{SVN} / \textbf{Git}
+\item Travail en \textbf{Cycle en V}
+\item \textbf{Formation} des nouveaux arrivants
+\end{itemize}}
+
+\vspace{1ex}
+
+\textbf{Environnement technique} : Java 8, Angular 11, Spring Batch, DBeaver, JUnit, Mockito/PowerMockito, SoapUI, SVN, JBoss Server 7.1, ActiveMQ, ...
+
+\newpage
+
+\cventry{Orléans, France}{Projet FullStack Spring -- Angular : \href{www.mesaides28.fr}{www.mesaides28.fr}}{Conseil Départemental d'Eure-et-Loir (28)}{De Mars 2021 à Juin 2021}{}{{\textbf{Taille du projet}} : Equipe de 5 personnes}
+
+\vspace{1ex}
+
+Conception d'un site web permettant de simuler ses droits aux aides sociales :
+
+{\begin{itemize}
+\item Développement du Back-Office (Administration) : Gestion des horaires, adresses et organismes sociaux (ajout, edition, suppression, ...) selon les autorisations de l'utilisateur connecté
+    \begin{itemize}
+    
+\vspace{1ex}
+	\item Back-End
+        \begin{itemize}
+            \item API et accès aux données -- \textbf{Java 11 / Spring Boot / Hibernate / Oracle / Postgre}
+            \item Authentification -- \textbf{Spring Security / JWT}
+            \item Tests unitaires -- \textbf{JUnit, Mockito}
+        \end{itemize}
+        
+\vspace{1ex}
+    \item Front-End 
+        \begin{itemize}
+            \item Consommation des API (Int/Ext) et parsing JSON/XML -- \textbf{Angular 11 (CLI, NPM, ...)}
+            \item Configuration des formulaires -- \textbf{@angular/forms, BootStrap, ... }
+            \item Tests unitaires -- \textbf{Karma, Jasmine}
+        \end{itemize}
+    
+\vspace{1ex}
+    \item IHM 
+    	\begin{itemize}
+            \item Création des pages web à partir d'une charte graphique prédéfinie -- \textbf{HTML / CSS / BootStrap}
+            \item Configuration des éléments et de la navigation dans l'IHM -- \textbf{Directives, Pipes, Routing, ... }
+        \end{itemize}
+\vspace{1ex}
+	\end{itemize}
+\item Gestion de versions -- \textbf{Git, GitLab}
+\item Integration continue -- \textbf{Maven, Sonar, Docker, Jenkins}
+\item Travail en méthodologie \textbf{Agile}
+\end{itemize}}
+
+\vspace{1ex}
+
+\textbf{Environnement technique} : Java 11 (Spring Boot/Security), Angular 11, Hibernate, Oracle, Postgre, Maven, JWT, Docker, Git, GitLab, HTML5, Bootstrap, ...
+
+\vspace{-3mm}
+
+\begin{center}
+\textcolor{color1}{\rule{0.6\textwidth}{0.4pt}}
+\end{center}
+
+\vspace{1.1mm}
+
+\cventry{Orléans, France}{Projet FullStack Spring -- Angular}{Université d’Orléans}{De Mars à Avril 2019}{Architecture orientée microservices (SOA)}{{\textbf{Taille du projet}} : Équipe de 4 personnes}
+
+\vspace{1ex}
+
+Conception d'une application d'organisation d'évènements dans la région orléanaise :
+
+{\begin{itemize}
+\item Recueil et modélisation du besoin (diagrammes de classes, …)
+\item Appel d’API publiques et parsing des données reçues -- \textbf{JSON}
+\item Développement d’une API privée sécurisée  -- \textbf{Spring Boot}
+\item Configuration des bases  -- \textbf{Redis}, \textbf{ElasticSearch}, \textbf{MySQL}
+\item Configuration et déploiement de \textbf{Zuul}, \textbf{Eureka}, \textbf{Feign} et \textbf{Ribbon}
+\item Utilisation et intégration du Framework d’autorisation \textbf{OAuth2} -- \textbf{Google}, \textbf{GitHub} et \textbf{Facebook}
+\item Création d’images \textbf{Docker} des microservices et des bases de données
+\item Développement d’un client web sous \textbf{Angular7}, faisant appel à l’API privée
+\item Gestion de versions -- \textbf{Git}
+\item Documentation de l’API  -- \textbf{SwaggerUI}
+\item Utilisation de \textbf{JHipster} pour la génération de certaines parties de l’application
+\end{itemize}}
+
+\vspace{1ex}
+
+\textbf{Environnement technique} : Spring Boot, Angular 7, Docker, Git, Eureka, Zuul, Ribbon, Feign, Redis, ElasticSearch, OAuth2, HTML5, Bootstrap, ...
+
+\newpage
+
+\cventry{Orléans, France}{Refonte et modernisation du système d’information décisionnel MMH}{Malakoff-Médéric-Humanis}{De Sept. 2018 à Sept. 2019}{}{{\textbf{Taille du projet}} : Plateau de 20 à 25 personnes}
+
+\vspace{1ex}
+
+Développer, concevoir et maîtriser les traitements de migration de données :
+
+{\begin{itemize}
+\item Développement de traitements de migration de données -- \textbf{IBM DataStage}
+\item Conception technique découlant de l’analyse des besoins du client
+\item Amélioration continue et optimisation des traitements précédemment développés
+\item Génération de packages \textbf{SQL} destinés aux livraisons
+\item Travail en méthodologie \textbf{Agile}
+\item Reporting quotidien et estimation du \textbf{RAE}
+\item Analyse et correction des retours de recette
+\item Suivi  et correction des anomalies détectées par la cellule de qualification -- \textbf{HP ALM Quality Center}
+\item Tests unitaires par requêtes SQL -- \textbf{SQLDeveloper} / \textbf{SQLServer}
+\item Développement de traitements -- \textbf{PL/SQL}
+\item Elaboration et dispense de formations aux nouveaux arrivants, stagiaires, ...
+\end{itemize}}
+
+\vspace{1ex}
+
+\textbf{Environnement technique} : IBM DataStage, Oracle SQL Developer, Microsoft SQL Server, Office, HP ALM Quality Center, Git, Teams, ...
+
+\section{Compétences techniques et fonctionnelles}
+
+\def\arraystretch{1.2}% 
+ \begin{tabularx}{\textwidth}{sb}
+    \textbf{Langage / Framework} & Java 11, Angular 11, SQL, Spring, TypeScript, PHP, IBM DataStage, Talend, Symfony, HTML/CSS/JS \\
+    \textbf{SGBD} & Oracle SQL Developer, Microsoft SQL Server, PostgreSQL, MySQL, ElasticSearch, Redis \\
+    \textbf{Logiciels/Outils} & Docker, Git, SVN, Maven, Eclipse, Suite JetBrains (IDEA), IBM DataStage, JMS, Eureka, Zuul, Ribbon, Feign, Postman, SoapUI, MagicDraw, ...  \\
+    \textbf{Méthodologies} & UML, Mérise, Méthodes Agile, Cycles en V \\
+    \textbf{Fonctionnel} & Banque Assurance : IARD, Vie, Décès, Bancaire \newline Protection Sociale : Retraite, Assurance de Personnes\\
+\end{tabularx}
+\end{document}
